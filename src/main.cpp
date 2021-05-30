@@ -61,12 +61,23 @@ void setup() {
 #endif
 }
 
+// https://sourceforge.net/p/lirc/mailman/lirc-list/thread/trinity-e7cf0040-4ca4-4304-95a6-510d69ba1c92-1521283664810%403c-app-gmx-bs47/#msg36265158
+#define KEY_OFF 0x0D
+#define KEY_1   0x86
+#define KEY_2   0x95
+#define KEY_3   0xA0
+#define KEY_4   0xB3
+#define KEY_5   0xCA
+#define KEY_6   0xD9
+#define KEY_7   0xEC
+#define KEY_8   0xFF
+
 void loop() {
 	digitalWrite(LED_BUILTIN, LOW);
 
 	ir_header();
 	ir_byte(0xB8);
-	ir_byte(0xFF); // key
+	ir_byte(KEY_8);
 	ir_post();
 	ir_zero();
 
