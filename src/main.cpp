@@ -57,7 +57,6 @@ void setup() {
 #ifdef CARRIER_FREQUENCY
 	analogWriteFreq(CARRIER_FREQUENCY);
 	analogWriteRange(2);
-	analogWrite(LED_IR, 1);
 #endif
 }
 
