@@ -71,5 +71,5 @@ void loop() {
 	ir_zero();
 
 	digitalWrite(LED_BUILTIN, HIGH);
-	delay(2000);
+	delay(200);
 }
